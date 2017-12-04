@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
+    "start2": "cross-env NODE_PATH=./src concurrently --kill-others \"node src/server\"",
     "build": "webpack --config webpack.prod.js"
   },
   "keywords": [
@@ -38,8 +39,27 @@
     "webpack-merge": "^4.1.0"
   },
   "dependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "bluebird": "^3.5.1",
+    "chokidar": "^1.7.0",
+    "compression": "^1.7.1",
+    "cross-env": "^5.1.1",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.7",
+    "history": "^3.0.0",
+    "humps": "^2.0.1",
+    "immutable": "^3.8.2",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.6.0",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "react-helmet": "^5.2.0",
+    "react-redux": "^5.0.6",
+    "react-router": "^3.0.5",
+    "redux": "^3.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "superagent": "^3.8.1",
+    "webpack-hot-middleware": "^2.21.0"
   },
   "repository": {
     "type": "git",
